@@ -31,13 +31,9 @@ Assets y configuración relevantes
 
 Cómo abrir y ejecutar
 1. Abrir Unity Hub y seleccionar la carpeta del proyecto (la raíz donde está `ProjectSettings/`).
-2. Abrir la escena principal desde la ventana `File > Open Scene` (buscar en `Assets/Scenes` si existe).
-3. En el Inspector, asignar referencias:
-   - `CoinSpawner`: asignar `coinPrefab` y `terrain` (si no se auto-detecta).
-   - `CoinCounter`: asignar `coinText` (TextMeshProUGUI) y `winSound` opcional.
-   - `LevelTimer`: asignar `timerText` (TextMeshProUGUI) y `loseSound` opcional.
-   - `MusicManager`: asegurarse de que tenga `AudioSource` con clip y `DontDestroyOnLoad` si se desea persistencia.
+2. Abrir la escena principal desde la ventana `File > Open Scene` elegir la escena que esta en la carpeta.
 4. Pulsar Play en el Editor para probar.
+5. Como alternativa se puede contruir la escena directamente para jugar 
 
 Notas y recomendaciones
 - Revisa y ajusta `totalCoins` en `CoinCounter` y `coinCount` en `CoinSpawner` para equilibrar el nivel.
@@ -54,14 +50,5 @@ Archivos clave a revisar
 - [Assets/LevelTimer.cs](Assets/LevelTimer.cs)
 - [Assets/MusicManager.cs](Assets/MusicManager.cs)
 
-Siguientes pasos sugeridos
-- Probar la escena en Editor y ajustar referencias UI/Audio.
-- Añadir instrucciones específicas de build (plataforma target) si quieres un ejecutable.
-
-Si quieres, puedo:
-- Añadir instrucciones de build para Windows/Android/iOS.
-- Extraer una lista completa de escenas y assets usados por la escena principal.
-- Generar un CHANGELOG o empaquetar prefabs importantes.
-
----
-Generado automáticamente: resumen básico del proyecto. 
+Video
+- [Video de la entrega](https://youtu.be/eSYNWnKDfUo "Entrega IG-14")
