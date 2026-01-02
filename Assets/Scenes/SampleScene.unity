@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811f80f57ab2b434fb502ba5706bc25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  timeLimit: 5
+  timeLimit: 300
   timerText: {fileID: 1745627342}
   loseSound: {fileID: 8300000, guid: 880c8e9279d401b46aa6432cedbc18e7, type: 3}
 --- !u!4 &1095249700
