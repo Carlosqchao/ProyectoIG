@@ -1,19 +1,19 @@
 # Proyecto IG-S14
 Autores: Juan Boissier García y Carlos Ruano Ramos
-Resumen
+### Resumen
 - Proyecto Unity (3D) con objetivo de recoger monedas antes de que termine el tiempo.
 - Solución Visual Studio: `IG-S14.slnx`.
 
-Estructura principal
+### Estructura principal
 - Assets/: código C#, prefabs, audios, terrenos y escenas.
 - Packages/: paquetes de Unity.
 - ProjectSettings/: ajustes del proyecto (versión de Unity, configuración de entrada, etc.).
 - IG-S14.slnx: solución para editar scripts en Visual Studio.
 
-Versión de Unity
+### Versión de Unity
 - Comprueba el archivo `ProjectSettings/ProjectVersion.txt` para ver la versión exacta de Unity usada.
 
-Scripts principales (resumen)
+### Scripts principales (resumen)
 - Assets/PlayerControl.cs: controlador FPS simple (movimiento, mirada con ratón y salto).
 - Assets/CoinSpawner.cs: genera monedas aleatoriamente sobre el terreno (`coinPrefab`, `coinCount`, `terrain`).
 - Assets/CoinPickup.cs: comportamiento de recogida — suma monedas, reproduce sonido y destruye la moneda al colisionar con el jugador.
@@ -23,22 +23,17 @@ Scripts principales (resumen)
 - Assets/MusicManager.cs: singleton para música de fondo (AudioSource), reproducción en bucle y parada en victoria/derrota.
 - Otros scripts detectados: `cubescript.cs`, `TreeSpawner.cs`, `TerrainScript.cs` y ejemplos de TextMeshPro (carpeta `TextMesh Pro/Examples & Extras`).
 
-Assets y configuración relevantes
+### Assets y configuración relevantes
 - Terreno: archivos `TerrainData_*` y `New Terrain.asset` presentes en `Assets/`.
 - Prefabs: monedas/prefabs (buscar en `Assets/Prefabs` si existe).
 - UI: Usa TextMeshPro para contador y temporizador (asegúrate de asignar referencias en el Inspector).
 - Sonidos: varios archivos .mp3 referenciados en `Assets/` (efectos de moneda, música, victoria/derrota).
 
-Cómo abrir y ejecutar
+### Cómo abrir y ejecutar
 1. Abrir Unity Hub y seleccionar la carpeta del proyecto (la raíz donde está `ProjectSettings/`).
 2. Abrir la escena principal desde la ventana `File > Open Scene` elegir la escena que esta en la carpeta.
 4. Pulsar Play en el Editor para probar.
 5. Como alternativa se puede contruir la escena directamente para jugar 
-
-Notas y recomendaciones
-- Revisa y ajusta `totalCoins` en `CoinCounter` y `coinCount` en `CoinSpawner` para equilibrar el nivel.
-- Si la escena no carga o faltan referencias, busca todos los `.unity` en `Assets/` y abre la que sea la principal.
-- TextMeshPro viene con ejemplos; puedes eliminarlos si deseas limpiar el proyecto.
 
 Archivos clave a revisar
 - [IG-S14.slnx](IG-S14.slnx)
@@ -50,5 +45,6 @@ Archivos clave a revisar
 - [Assets/LevelTimer.cs](Assets/LevelTimer.cs)
 - [Assets/MusicManager.cs](Assets/MusicManager.cs)
 
-Video
-- [Video de la entrega](https://youtu.be/eSYNWnKDfUo "Entrega IG-14")
+### Video
+- [![Video de la entrega](https://img.youtube.com/vi/eSYNWnKDfUo/maxresdefault.jpg)](https://youtu.be/eSYNWnKDfUo)
+
